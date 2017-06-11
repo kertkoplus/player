@@ -95,7 +95,7 @@ public class PlayerRecordsResource {
     }
     
     @POST
-    @Path("{id : \\d+}/movie/{movieId : \\d+}")
+    @Path("{id : \\d+}/player/{playerId : \\d+}")
     @Consumes("application/json")
     @Produces("application/json")
     public PlayerStatusType addPlayerRecordList(PlayerStatusType records,
