@@ -67,7 +67,7 @@ public class PlayerRecordsResource {
     }
     
     @GET
-    @Path("{id :\\d++}/statuslist")
+    @Path("{id :\\d++}/playerrecordlist")
     @Produces("application/json")
     public PlayerStatusListType getPlayerRecordList(@PathParam ("id") String id,
             @QueryParam("token") String token){
@@ -95,7 +95,7 @@ public class PlayerRecordsResource {
     }
     
     @POST
-    @Path("{id : \\d+}/player/{playerId : \\d+}")
+    @Path("{recordId : \\d+}/players/{playerId : \\d+}")
     @Consumes("application/json")
     @Produces("application/json")
     public PlayerStatusType addPlayerRecordList(PlayerStatusType records,

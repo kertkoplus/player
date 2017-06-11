@@ -124,6 +124,7 @@ public class PlayerWebService {
             PlayerRecordType record;
             record = getRecord(parameter.getRecordId());
             pslt = record.getPlayerStatusList();
+            return pslt;
         }
         return pslt;
     }
